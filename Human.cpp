@@ -2,15 +2,15 @@
 #include <string>
 #include <iostream>
 
-human::human(){
+Human::Human(){
     name = "Human";
 };
 
-human::human(std::string n){
+Human::Human(std::string n){
     name = n;
 };
 
-char human::makeMove(){
+char Human::makeMove(){
     // get input
     char move;
     std::cout << "Enter move: ";
@@ -20,6 +20,6 @@ char human::makeMove(){
     return move;
 }
 
-std::string human::getName(){
+std::string Human::getName(){
     return name;
 }
