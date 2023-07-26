@@ -5,10 +5,10 @@
 #include <string>
 #include "Player.h"
 
-class human: public Player{
+class Human: public Player{
     public:
-        human();
-        human(std::string n);
+        Human();
+        Human(std::string n);
         char makeMove();
         std::string getName();
 };
