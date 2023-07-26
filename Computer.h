@@ -1,7 +1,7 @@
 #ifndef COMPUTER
 #define COMPUTER
 
-#include "player.h"
+#include "Player.h"
 class Computer: public Player{
     public:
         Computer();
