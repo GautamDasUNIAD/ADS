@@ -7,6 +7,11 @@
 Referee::Referee(){}
 
 Player * Referee::refGame(Player * player1, Player * player2){
+    //In order to add more move, no changes are required here
+    //Just have to create a new class that inherits from the move class
+    //And add the new class to the map in movefactor.cpp
+    //Hence, OPEN-CLOSED Principle is not violated
+    
     Move* p1move = player1->makeMove();
     Move* p2move = player2->makeMove();
 
