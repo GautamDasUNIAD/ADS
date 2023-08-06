@@ -37,10 +37,10 @@ Player * Referee::refGame(Player * player1, Player * player2){
         return nullptr;
     }
     //Only other option, p2 wins
+
     else {
         return player2;
     }
 
-    
-    return nullptr;
+    //^^ Becase of that if either of the two moves is incompatible or invalid, player2 is return and shown as the victor
 }
