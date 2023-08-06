@@ -17,7 +17,7 @@
 class Movefactory{
         //Learnt about maps from Geeks for Geeks, link: https://www.geeksforgeeks.org/map-associative-containers-the-c-standard-template-library-stl/
 
-        //A map of names of moves as keys (strings) and pointers to those objects 
+        //A map of names of moves as keys (strings) and pointers to corresponding objects: pointers["Monkey"] = new Monkey
         std::map<std::string, Move*> pointers;
     public:
         Movefactory();
