@@ -3,15 +3,15 @@
 #include <string>
 #include <iostream>
 
-human::human(){
+Human::Human(){
     name = "Human";
 };
 
-human::human(std::string n){
+Human::Human(std::string n){
     name = n;
 };
 
-Move* human::makeMove(){
+Move* Human::makeMove(){
     // get input
     std::string move;
     std::cout << "Enter move: ";
@@ -21,6 +21,6 @@ Move* human::makeMove(){
     return Factory.CreateMoveObject(move);
 }
 
-std::string human::getName(){
+std::string Human::getName(){
     return name;
 }

@@ -6,10 +6,10 @@
 #include "Player.h"
 #include "Move.h"
 
-class human: public Player{
+class Human: public Player{
     public:
-        human();
-        human(std::string n);
+        Human();
+        Human(std::string n);
         Move* makeMove();
         std::string getName();
 };
