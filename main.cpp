@@ -48,10 +48,10 @@ int main(void){
     
     // output the result as true or false
     if (result == 1){
-        std::cout << "True ";
+        std::cout << "true ";
     }
     else{
-        std::cout << "False ";
+        std::cout << "false ";
     } 
 
     // output the sorted list
