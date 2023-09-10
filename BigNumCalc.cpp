@@ -103,7 +103,7 @@ std::list<int> BigNumCalc::sub(std::list<int> num1, std::list<int> num2){
             // try get the second number in the first list
             if (iterator1 != num1.rend()){
                 // move to the next digit in the first list 
-                ++iterator1;
+                iterator1++;
 
                 // subtract 1 from that digit
                 *iterator1 = *iterator1 - 1;
@@ -123,8 +123,7 @@ std::list<int> BigNumCalc::sub(std::list<int> num1, std::list<int> num2){
 
         }
         // add the result to the result list
-        
-        result.push_back(result_num);
+        result.push_front(result_num);
 
         // move to next element for both lists 
         // (if that element exists):
@@ -151,6 +150,11 @@ std::list<int> BigNumCalc::sub(std::list<int> num1, std::list<int> num2){
             }
         }   
     }
+    
+    for (auto it = result.begin(); it != result.end(); it++){
+        std::cout << *it;
+    }
+    std::cout<< '\n';
 
     return result;
 
