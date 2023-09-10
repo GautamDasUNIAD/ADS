@@ -1,4 +1,5 @@
 #include "BigNumCalc.h"
+#include <iostream>
 #include <stdlib.h>
 #include <cmath>
 // default constructor and desctructor
@@ -9,10 +10,6 @@ BigNumCalc::~BigNumCalc(){};
 std::list<int> BigNumCalc::buildBigNum(std::string numString){
     // create a list object
     std::list<int> big_number;
-
-    // number as an interger
-    int num = std::stoi(numString);
-
     // loop through each character of the string
     for (int i = 0; i < numString.length(); i++){
         // get ith digit from the stirng as an integer
@@ -69,6 +66,11 @@ std::list<int> BigNumCalc::add(std::list<int> num1, std::list<int> num2){
     if (carry != 0){
         result.push_front(carry);
     }
+
+    for (auto it = result.begin(); it != result.end(); it++){
+        std::cout << *it;
+    }
+    std::cout<< '\n';
 
     return result;
 }
